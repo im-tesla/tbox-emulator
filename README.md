@@ -38,8 +38,7 @@ Hardware Requirements
 
 - Arduino-compatible MCU
 - MCP2515 CAN controller (8 MHz crystal)
-- CAN transceiver (TJA1050 / SN65HVD230 / equivalent)
-- 120 ohm termination on CAN bus
+- 120 ohm termination on CAN bus (enable by jumper on MCP2515)
 
 
 Typical Wiring
