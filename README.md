@@ -59,7 +59,6 @@ Build & Flash
 
 1. Install required libraries:
    - mcp_can
-   - SPI
 
 2. Default CAN configuration:
    CAN.begin(MCP_ANY, CAN_250KBPS, MCP_8MHZ)
