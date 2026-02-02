@@ -51,6 +51,8 @@ MCP2515 -> MCU
 - MISO  -> SPI MISO
 - INT   -> optional
 
+MCP2515 -> Talaria:
+<br><br><img src="imgs/pinout.jpg" alt="Pinout" width="400">
 
 Build & Flash
 -------------
