@@ -51,9 +51,7 @@ void          sendEmpty(unsigned long id);
 EncryptedPayload scramble(unsigned char data[8], int mode);
 uint32_t      rotateLeft(uint32_t value, int bits);
 
-// ─────────────────────────────────────────────────────────────────────────────
-// setup
-// ─────────────────────────────────────────────────────────────────────────────
+
 void setup() {
     Serial.begin(115200);
     delay(1000);
@@ -69,9 +67,7 @@ void setup() {
     Serial.println("=== T-BOX EMULATOR ACTIVE ===");
 }
 
-// ─────────────────────────────────────────────────────────────────────────────
-// loop
-// ─────────────────────────────────────────────────────────────────────────────
+
 void loop() {
     unsigned long now = millis();
 
@@ -181,3 +177,4 @@ EncryptedPayload scramble(unsigned char data[8], int mode) {
 
     return ep;
 }
+
