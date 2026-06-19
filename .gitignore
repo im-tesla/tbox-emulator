@@ -1,0 +1,8 @@
+# OEM firmware/RAM dumps — used only for local reverse-engineering / verification.
+# Never commit these (see the project disclaimer: no OEM firmware or binary blobs).
+firmware.bin
+ram.bin
+*.bin
+
+# macOS
+.DS_Store

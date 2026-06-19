@@ -8,6 +8,21 @@ This project simulates T-Box request/response behavior on the CAN bus and allows
 development and analysis without original hardware present.
 
 
+Status — EXPERIMENTAL
+---------------------
+
+This build hardens the firmware against random `05200` ("T-Box not detected")
+dropouts, traced to the MCP2515 entering a CAN bus-off / error state with no
+recovery path (the always-powered Arduino never re-initialises the controller).
+It adds automatic bus-off / RX-overflow recovery, a watchdog, and an on-device
+CAN fault log (read over Serial @115200).
+
+The `0x503` heartbeat (200 ms cadence) and the response crypto have been verified
+bit-for-bit against the original module's firmware. **Field-test results are
+pending — TBA.** Flash, ride, then read the Serial `STATUS` line: a non-zero
+`recov` count with no `05200` confirms the fix.
+
+
 Features
 --------
 
