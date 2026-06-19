@@ -6,6 +6,7 @@ ram.bin
 
 # OEM-derived reverse-engineering notes — keep local, do not publish.
 REVERSE_ENGINEERING.md
+ble.md
 
 # macOS
 .DS_Store
